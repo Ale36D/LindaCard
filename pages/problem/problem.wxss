@@ -1,0 +1,48 @@
+.help {
+  width: 100vw;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+}
+
+.help .help_item .title {
+  font-size: 14px;
+  width: 96vw;
+  margin-left: 2%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+}
+
+.help .help_item .title .title_1 {
+  width: 90vw;
+  height: 80rpx;
+  padding-left: 20rpx;
+}
+
+.help .help_item .title .title_2 {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.help .help_item .title .title_2 image {
+  width: 16px;
+  height: 16px;
+}
+
+.help .help_item .detail {
+  margin: 5px 5px 5px 5px;
+  color: #969696;
+  line-height: 40rpx;
+  font-size: 14px;
+  height: auto;
+  transition: height 1s;
+  -moz-transition: height 1s;
+  -webkit-transition: height 1s;
+  -o-transition: height 1s;
+  overflow: hidden;
+}

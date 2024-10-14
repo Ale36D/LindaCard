@@ -1,0 +1,27 @@
+/* pages/setup/setup.wxss */
+page{
+  background-image: url("https://gitee.com/uncleicecream/bk-img/raw/master/HomePage.webp");
+  background-size: cover;
+}
+.body_card{
+  /* 居中对齐元素 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f3542;
+  margin: 10px;
+  border-radius: 5px;
+  height: auto;
+  color: #fff;
+  box-shadow: 5px;
+  padding: 3vw;
+}
+.image{
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  overflow: hidden;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 10px;
+}

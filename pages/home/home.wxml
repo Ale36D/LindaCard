@@ -1,0 +1,89 @@
+<view class="page">
+  <!-- <web-view src="{{url}}"></web-view> -->
+  <view style="height: 10px; background: #fff;"></view>
+  <view class="card">
+
+    <view class="radius">
+      <image src="{{titleSrc}}" class="image" mode="scaleToFill"/>
+    </view>
+    <view >
+      <image src="/pages/img/linda.png" mode="aspectFit" class="card_2"/>
+    </view>
+    <view class="card_3">
+      <text class="text">姓   名: {{name}}\n</text>
+      <text class="text">学/工号: {{stuID}}\n</text>
+      <text class="text">余   额: {{money}}</text>
+    </view>
+  </view>
+  <view style="display: flex;flex-direction: row; background-color: #fff; align-items: center;">
+    <view  bindtap="accountRecharge" class="center">
+      <image src="/pages/img/money.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+      <text>账户充值</text>
+    </view>
+    <view style="background-color: #a8a8a8; height: 50px; width: 1px;"></view>
+    <view bindtap="onImageTap" class="center">
+      <image src="/pages/img/qrcode.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+      <text>二维码</text>
+    </view>
+  </view>
+  <view style="display: flex;flex-direction: column; background-color: #fff; align-items: center; height: auto; margin-top: 5px;">
+    <view style="display: flex;flex-direction: row; background-color: #fff; align-items: center; width: 100%; margin-top: 5%;">
+      <!-- 第一排 -->
+      <view bindtap="openBalance" class="center">
+        <image src="/pages/img/1.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; font-weight: 350;">\n余额</text>
+      </view>
+      <view bindtap="openBill" class="center">
+        <image src="/pages/img/2.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; font-weight: 350;">\n交易明细</text>
+      </view>
+      <view class="center">
+        <image src="/pages/img/3.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; font-weight: 350;">\n用电缴费</text>
+      </view>
+      <view bindtap="openFaceView" class="center">
+        <image src="/pages/img/4.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; font-weight: 350;">\n人脸信息查看</text>
+      </view>
+    </view>
+    <view style="display: flex;flex-direction: row; background-color: #fff; align-items: center; width: 100%; margin-top: 5%;">
+      <!-- 第二排 -->
+      <view bindtap="openPawdModify" class="center">
+        <image src="/pages/img/5.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; font-weight: 350;">\n密码修改</text>
+      </view>
+      <view bindtap="openRelieve" class="center">
+        <image src="/pages/img/6.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; font-weight: 350;">\n解除绑定</text>
+      </view>
+      <view bindtap = "instructions" class="center">
+        <image src="/pages/img/7.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; font-weight: 350;">\n使用说明</text>
+      </view>
+      <view class="center">
+        <image src="/pages/img/8.png" mode="aspectFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; text-align: center; font-weight: 350;">\n中行手机银行充\n值教程</text>
+      </view>
+    </view>
+    <view style="display: flex;flex-direction: row; background-color: #fff; align-items: center; width: 100%; margin-top: 5%; margin-bottom: 3%;">
+      <!-- 第三排 -->
+      <view bindtap ="facialInformationCollection" class="center">
+        <image  src="/pages/img/9.png" mode="aspectFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; text-align: center; font-weight: 350;">\n人脸信息自助采\n集说明</text>
+      </view>
+      <view bindtap= "openProblem"class="center">
+        <image src="/pages/img/10.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666; font-weight: 350;">\n常见问题</text>
+      </view>
+      <view class="center">
+        <image src="" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666;"></text>
+      </view>
+      <view bindtap="openSetUp" class="center">
+        <image src="" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
+        <text style="font-size: 12px; color: #666666;"></text>
+      </view>
+    </view>
+  </view>
+</view>
+

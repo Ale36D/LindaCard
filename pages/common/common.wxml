@@ -1,0 +1,8 @@
+<!--pages/common/common.wxml-->
+<page-meta page-style="background:{{srcColor}}">
+  <scroll-view scroll-y="{{true}}" style="width:100vw;height: 100vh; top: 0px; margin-top: 5%;">
+    <view class="img-size">
+      <image src="{{src}}" mode="widthFix" class="liucheng-img"></image>
+    </view>
+  </scroll-view>
+</page-meta>

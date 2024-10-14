@@ -1,0 +1,21 @@
+<!--pages/balance/balance.wxml-->
+<page-meta page-style="background-color: #ededed; display:flex; flex-direction:row; justify-content: center; align-items: center;">
+  <view class="moneyshow">
+    <view class="img_card">
+      <image src="/pages/img/balance.png" class="img"></image>
+    </view>
+    <view class="info_card">
+      <text style="font-size:15px; color: #D9D9D9;">{{name}} | {{stuID}}</text>
+      <view>
+        <text style="font-size:26px; color: #C8C8C8;">￥</text>
+        <text style="font-size:38px;">{{money}}</text>
+      </view>
+    </view>
+    <view class= "line_card" style="height: 1px; width: 100%; background-color: #F5F5F5;"></view>
+    <view class= "btn_card">
+      <button bindtap="balanceClick" style="background-color:#07C160 ; color: #F5F5F5; width: 80%; height: auto;">去 充 值</button>
+    </view>
+  </view>
+
+
+</page-meta>

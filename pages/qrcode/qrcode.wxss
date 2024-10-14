@@ -1,0 +1,27 @@
+/* pages/qrcode.wxss */
+page{
+  background-color: #2347BD;
+  height: 100%;
+}
+.page_center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  height: 100%;
+  width: 100%;
+}
+.center{
+  height: 60vh;
+  width: 90vw;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+}
+.image{
+  overflow: hidden;
+  width: 70vw;
+}

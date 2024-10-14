@@ -1,0 +1,26 @@
+/* pages/pswdmodify/pswdmodify.wxss */
+.body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+}
+.title_card{
+  width: 92%;
+  height: 32vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* 垂直居中 */
+  justify-content: space-between; /* 子元素平均分布 */
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.img{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}

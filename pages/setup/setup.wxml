@@ -1,0 +1,22 @@
+<!--pages/setup/setup.wxml-->
+<page-meta>
+<view class="body_card">
+  <image src="{{srcPath}}" class="image" mode="scaleToFill"></image>
+  <view style="display: flex; flex-direction: row; margin: 5vw;">
+    <text>姓名:</text>
+    <input bindinput="nameInput" value="{{name}}" style="margin-left: 5vw;" type="text" placeholder="修改的姓名"/>
+  </view>
+  <view style="display: flex; flex-direction: row; margin: 5vw;">
+    <text>学号:</text>
+    <input bindinput="stuIDInput" value="{{stuID}}" style="margin-left: 5vw;" type="number" placeholder="修改的学号"/>
+  </view>
+  <view style="display: flex; flex-direction: row; margin: 5vw;">
+    <text>余额:</text>
+    <input bindinput="moneyInput" value="{{money}}" style="margin-left: 5vw;" type="number" placeholder="修改的余额"/>
+  </view>
+  <view style="display: flex; flex-direction: row; margin: 5vw;">
+    <button bindtap="getInputValue" style="margin: 5vw; background: #ff6b81; color: #fff;">读取</button>
+    <button bindtap="setValueToLocal" style="margin: 5vw; background: #1dd1a1; color: #fff;">修改</button>
+  </view>
+</view>
+</page-meta>

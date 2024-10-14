@@ -1,0 +1,24 @@
+<!--pages/relieve/relieve.wxml-->
+<page-meta page-style="background: #ededed;">
+  <view class="body">
+    <view class ="title_card"style="background: #fff;">
+      <view style="display: flex; width: 90%; padding: 5px;">
+        <text style="width: 30%; font-size: 14px;  color: #646464;">姓名</text>
+        <text style="width: 40%; font-size: 14px;">{{name}}</text>
+      </view>
+      <view style="background-color: #F5F5F5; height: 1px; width: 80vw;"></view>
+      <view style="display: flex; width: 90%; padding: 5px;">
+        <text style="width: 30%; font-size: 14px;  color: #646464;">卡户账号</text>
+        <text style="width: 40%; font-size: 14px;">{{cardID}}</text>
+      </view>
+      <view style="background-color: #F5F5F5; height: 1px; width: 80vw;"></view>
+      <view style="display: flex; width: 90%; padding: 5px;">
+        <text style="width: 30%; font-size: 14px;  color: #646464;">个人编号</text>
+        <text style="width: 40%; font-size: 14px;">{{stuID}}</text>
+      </view>
+    </view>
+    <button bindtap="relieveBtn" style="line-height: 6.5vh; height: 6.5vh; width: 90vw; margin-top: 15px; background: #EE1024;font-size: 14px;" type="primary">
+      <text style="text-align: center;">解除绑定</text>
+    </button>
+  </view>
+</page-meta>

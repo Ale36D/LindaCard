@@ -1,0 +1,43 @@
+<!--pages/pswdmodify/pswdmodify.wxml-->
+<page-meta page-style="background: #ededed;">
+  <view class="body">
+    <view class ="title_card"style="background: #fff;">
+      <view style="display: flex; width: 90%; padding: 5px;">
+        <image src="/pages/img/user.png" class="img"></image>
+        <text style="width: 30%; font-size: 14px;  color: #646464;">姓名</text>
+        <text style="width: 40%; font-size: 14px;">{{name}}</text>
+      </view>
+      <view style="background-color: #F5F5F5; height: 1px; width: 80vw;"></view>
+      <view style="display: flex; width: 90%; padding: 5px;">
+        <image src="/pages/img/message.png" class="img"></image>
+        <text style="width: 30%; font-size: 14px; color: #646464;">个人编号</text>
+        <text style="width: 40%; font-size: 14px;">{{stuID}}</text>
+      </view>
+      <view style="background-color: #F5F5F5; height: 1px; width: 80vw;"></view>
+      <view style="display: flex; width: 90%; padding: 5px;">
+        <text style="color: red;">*</text>
+        <text style="width: 30%; font-size: 16px; color: #646464;">原密码</text>
+        <input style="width: 70%; font-size: 12px;" auto-focus placeholder="请输入原密码"/>
+        <image src="/pages/img/unlook.png" class="img"></image>
+      </view>
+      <view style="background-color: #F5F5F5; height: 1px; width: 80vw;"></view>
+      <view style="display: flex; width: 90%; padding: 5px;">
+        <text style="color: red;">*</text>
+        <text style="width: 30%; font-size: 16px; color: #646464;">新密码</text>
+        <input style="width: 70%; font-size: 12px;" auto-focus placeholder="请输入新密码"/>
+        <image src="/pages/img/unlook.png" class="img"></image>
+      </view>
+      <view style="background-color: #F5F5F5; height: 1px; width: 80vw;"></view>
+      <view style="display: flex; width: 90%; padding: 5px;">
+        <text style="color: red;">*</text>
+        <text style="width: 30%; font-size: 16px; color: #646464;">新密码</text>
+        <input style="width: 70%; font-size: 12px;" auto-focus placeholder="请再次输入新密码"/>
+        <image src="/pages/img/unlook.png" class="img"></image>
+      </view>
+      
+    </view>
+    <button bindtap="modifyBtn" style="line-height: 6.5vh; height: 6.5vh; width: 90vw; margin-top: 15px; background: #07A860;font-size: 14px;" type="primary">
+      <text style="text-align: center;">修改密码</text>
+    </button>
+  </view>
+</page-meta>

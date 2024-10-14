@@ -1,0 +1,25 @@
+<!--pages/details/details.wxml-->
+<view>
+  <view class="title_card">
+    <view style="width: 40%;">
+      <text style="font-size: 13px;">全部</text>
+    </view>
+    <view style="width: 40%;">
+      <text style="font-size: 13px;">钱包</text>
+    </view>
+  </view>
+  <view class="body_card">
+    <view style="width: 90%;">
+      <text style="font-size: 16px;">本月</text>
+    </view>
+    <view style="width: 90%; color: #9c9c9c;">
+      <text style="font-size: 12px;">支出 ￥ 0.00</text>
+      <text style="font-size: 12px;">\t</text>
+      <text style="font-size: 12px;">充值 ￥ 0.00</text>
+    </view>
+  </view>
+  <view class="bottom_card">
+    <image src="/pages/img/loding.png" mode="scaleToFill" class="img"/>
+    <text style="color: #666666;">\n暂无数据</text>
+  </view>
+</view>

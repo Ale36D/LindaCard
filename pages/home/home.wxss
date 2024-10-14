@@ -1,0 +1,57 @@
+.card{
+  height: 40%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.card_2{
+  position: absolute; /* 设置为绝对定位 */
+  top: 8%;
+  left: 5%;
+  transform: translate(0,0); /* 使元素居中 */
+  width: 130px;       /* 浮动元素的宽度 */
+  height: 35px;      /* 浮动元素的高度 */
+  z-index: 10;        /* 确保浮动元素在背景元素之上 */
+}
+.card_3{
+  position: absolute; /* 设置为绝对定位 */
+  top: 8%;
+  left: 60%;
+  transform: translate(0,0); /* 使元素居中 */
+  width: 160px;       /* 浮动元素的宽度 */
+  height: 35px;      /* 浮动元素的高度 */
+  z-index: 10;        /* 确保浮动元素在背景元素之上 */
+}
+.text {
+  font-size:26rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 10px 10px 10px #e6e6e6,-10px -10px 20px #fff,-10px -10px 30px #e6e6e6,10px 10px 40px #c8c8c8;
+  font-weight: 450; 
+}
+page{
+  background-color: #ededed;
+  height: 100%;
+}
+.radius{
+  height: 30%;          /* 图片高度自适应 */
+  width: 100%;           /* 图片宽度占满容器宽度 */
+  display: flex;        /* 使用flex布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+}
+.image{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 95%;
+  height: 180px;
+}
+.center{
+  display: flex;        /* 使用flex布局 */
+  flex-direction:column;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  height: 90px;          /* 根据需要设置容器的高度 */
+  width: 50%;           /* 根据需要设置容器的宽度 */
+  font-size:13px;
+  color: #a8a8a8;
+}

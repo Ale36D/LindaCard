@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/pay/pay",
+    "pages/home/home",
+    "pages/qrcode/qrcode",
+    "pages/common/common",
+    "pages/balance/balance",
+    "pages/details/details",
+    "pages/pswdmodify/pswdmodify",
+    "pages/relieve/relieve",
+    "pages/faceView/faceView",
+    "pages/problem/problem",
+    "pages/setup/setup"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "临大E码通",
+    "navigationBarTextStyle": "black"
+  }
+}

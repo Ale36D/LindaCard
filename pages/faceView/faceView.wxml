@@ -1,0 +1,17 @@
+<!--pages/faceView/faceView.wxml-->
+<page-meta page-style="background:#EEEEEE">
+  <view class="body">
+    <view class="body_card">
+      <image src="{{imgSrc}}" class="image" mode="aspectFit"></image>
+      <view style="background-color: #F5F5F5; height: 1px; width: 80vw; margin-top: 20px;"></view>
+      <view style="width: 80vw; margin-top: 20px; font-size: 14px;">
+        <text>1. 照片分值: </text>
+        <text style="color: #0CD1A0; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">暂无\n</text>
+        <text>2. 照片是否合格: </text>
+        <text style="color: #0CD1A0; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">暂无\n</text>
+        <text>3. 建议80分以下人员,参照人脸信息自助采集说明，按照要求重新拍照上传; </text>
+      </view>
+    </view>
+    
+  </view>
+</page-meta>

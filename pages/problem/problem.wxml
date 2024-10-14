@@ -1,0 +1,11 @@
+<page-meta page-style="background:#EDEDED">
+  <view class='help'>
+  <view class='help_item' wx:for="{{questList}}" wx:key="index">
+    <view class='title' data-index='{{index}}' catchtap='panel'>
+      <view class='title_1'>{{item.title}}</view>
+      <view class='title_2'><image src="/pages/img/{{item.t ? 'up':'down'}}.png"></image></view>
+    </view>
+    <view class='detail' style="height:{{ item.t?'':0}}">{{item.content}}</view>
+  </view>
+</view>
+</page-meta>

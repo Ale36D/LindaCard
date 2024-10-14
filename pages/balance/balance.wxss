@@ -1,0 +1,53 @@
+/* pages/balance/balance.wxss */
+.moneyshow{
+  top: 10px;
+  height: 24vh;
+  width: 92vw;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 5px;
+}
+.info_card{
+  position: absolute; /* 设置为绝对定位 */
+  top: 8%;
+  left: 44%;
+  transform: translate(0,0); /* 使元素居中 */
+  z-index: 10;        /* 确保浮动元素在背景元素之上 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+}
+.img_card{
+  position: absolute; /* 设置为绝对定位 */
+  top: 8%;
+  left: 7.5%;
+  transform: translate(0,0); /* 使元素居中 */
+  width: 130px;       /* 浮动元素的宽度 */
+  z-index: 10;        /* 确保浮动元素在背景元素之上 */
+  
+}
+.line_card{
+  position: absolute; /* 设置为绝对定位 */
+  top: 55%;
+  left: 0%;
+  transform: translate(0,0); /* 使元素居中 */
+  width: 130px;       /* 浮动元素的宽度 */
+  height: 35px;      /* 浮动元素的高度 */
+  z-index: 10;        /* 确保浮动元素在背景元素之上 */
+}
+.btn_card{
+  position: absolute; /* 设置为绝对定位 */
+  top: 65%;
+  left: 0%;
+  transform: translate(0,0); /* 使元素居中 */
+  width: 100%;       /* 浮动元素的宽度 */
+  height: auto;      /* 浮动元素的高度 */
+  z-index: 10;        /* 确保浮动元素在背景元素之上 */
+}
+.img{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+}
