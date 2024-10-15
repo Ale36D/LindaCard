@@ -8,7 +8,9 @@ Page({
     srcPath:"https://gitee.com/uncleicecream/bk-img/raw/master/微信图片_20240320185959.webp",
     name:"",
     stuID:"",
-    money:""
+    money:"",
+    payCode:"https://gitee.com/uncleicecream/bk-img/raw/master/payCode.webp",
+    isShowPayCode:true
   },
 
   /**
@@ -61,6 +63,12 @@ Page({
   moneyInput:function(event){
     this.setData({
       money:event.detail.value
+    })
+  },
+  showPayCodeView:function(){
+    let value = this.data.isShowPayCode
+    this.setData({
+      isShowPayCode:!value
     })
   },
 

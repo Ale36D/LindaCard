@@ -87,6 +87,16 @@ Page({
       wx.navigateTo({
         url: '/pages/setup/setup',
       })
+    },
+    openElePay:function(){
+      wx.navigateTo({
+        url: '/pages/ElePay/ElePay?titleName=' + "电控缴费"
+      })
+    },
+    openRecharge:function(){
+      wx.navigateTo({
+        url: '/pages/recharge/recharge'
+      })
     }
     
 });

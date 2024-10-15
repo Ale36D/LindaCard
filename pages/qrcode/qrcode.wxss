@@ -23,5 +23,21 @@ page{
 }
 .image{
   overflow: hidden;
-  width: 70vw;
+  width: 80vw;
+  height: 38vh;
+}
+.qr_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+  height: 100vh; 
+  width: 100vw; 
+  background-color: #fff;
+}
+.amplify_image{
+  overflow: hidden;
+  width: 90vw;
+  height: 50vh;
 }

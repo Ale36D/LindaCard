@@ -1,5 +1,10 @@
 <!--pages/setup/setup.wxml-->
-<page-meta>
+
+<page-meta >
+  <view class="payCodeView" hidden="{{isShowPayCode}}">
+    <image bindtap="showPayCodeView" src="{{payCode}}" class="amplify_image" mode="scaleToFill"/>
+  </view>
+  <view style="height: 10vh;"></view>
 <view class="body_card">
   <image src="{{srcPath}}" class="image" mode="scaleToFill"></image>
   <view style="display: flex; flex-direction: row; margin: 5vw;">
@@ -17,6 +22,12 @@
   <view style="display: flex; flex-direction: row; margin: 5vw;">
     <button bindtap="getInputValue" style="margin: 5vw; background: #ff6b81; color: #fff;">读取</button>
     <button bindtap="setValueToLocal" style="margin: 5vw; background: #1dd1a1; color: #fff;">修改</button>
+  </view>
+</view>
+<view style="position: absolute; top: 85vh;">
+  <view style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100vw;">
+    <button style="width: 60vw;margin-bottom: 1vh;background-color: #1dd1a1; color: #fff;" bindtap="showPayCodeView">打赏一下🥳</button>
+    <text class="text_view">© 2024 E Card Tools. All rights reserved.</text>
   </view>
 </view>
 </page-meta>

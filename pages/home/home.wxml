@@ -42,7 +42,7 @@
         <image src="/pages/img/2.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
         <text style="font-size: 12px; color: #666666; font-weight: 350;">\n交易明细</text>
       </view>
-      <view class="center">
+      <view bindtap="openElePay" class="center">
         <image src="/pages/img/3.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
         <text style="font-size: 12px; color: #666666; font-weight: 350;">\n用电缴费</text>
       </view>
@@ -65,7 +65,7 @@
         <image src="/pages/img/7.png" mode="scaleToFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
         <text style="font-size: 12px; color: #666666; font-weight: 350;">\n使用说明</text>
       </view>
-      <view class="center">
+      <view bindtap = "openRecharge" class="center">
         <image src="/pages/img/8.png" mode="aspectFill" style="overflow: hidden;  width: 40px; height: 40px;"/>
         <text style="font-size: 12px; color: #666666; text-align: center; font-weight: 350;">\n中行手机银行充\n值教程</text>
       </view>

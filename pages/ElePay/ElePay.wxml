@@ -1,0 +1,61 @@
+<!--pages/ElePay/ElePay.wxml-->
+<page-meta>
+<view style="display: flex;flex-direction: column; padding-left: 2vw;">
+<!-- 用户信息 -->
+  <text style="color: #D9D9D9; font-size: 14px; font-weight: 550;">用户信息</text>
+  <view style="height: 2vh;"></view>
+  <view style="display: flex;flex-direction: row;">
+    <image src="/pages/img/11.png" mode="scaleToFill" class="img"/>
+    <text class="label_text">个人编号</text>
+    <view style="width: 10vw;"></view>
+    <text class="label_text">{{stuID}}202409070307</text>
+  </view>
+  <view style="height: 1vh;"></view>
+  <view style="height: 1px; width: 100vw;background-color: #f8f8f8;"></view>
+  <view style="height: 1vh;"></view>
+  <!-- 房间信息 -->
+  <text style="color: #D9D9D9; font-size: 14px; font-weight: 550;">房间信息</text>
+  <view style="height: 1vh;"></view>
+  <view wx:for="{{roomInfoList}}">
+    <view style="height: 1.5vh;"></view>
+    <view style="display: flex;flex-direction: row;">
+      <image src="{{item.icon}}" mode="scaleToFill" class="img"/>
+      <text class="label_text">{{item.nameInfo}}</text>
+      <view style="width: 15vw;"></view>
+      <picker bindchange="bindCampusChange" style="background: #fff; " value="{{regionList[index]}}" range="{{item.regionList}}">
+      <view>
+        <text class="label_text" style="color: #D9D9D9;">{{item.tipsInfo}}</text>
+      </view>
+      </picker>
+    </view>
+    <view style="height: 1.5vh;"></view>
+    <view style="height: 1px; width: 100vw;background-color: #f8f8f8;"></view>
+  </view>
+  <!-- 缴费信息 -->
+  <view style="height: 1vh;"></view>
+    <text style="color: #D9D9D9; font-size: 14px; font-weight: 550;">缴费信息</text>
+  <view style="height: 2vh;"></view>
+  <view style="display: flex;flex-direction: row; ">
+    <image src="/pages/img/16.png" mode="scaleToFill" class="img"/>
+    <text class="label_text" style="color: #D9D9D9; font-weight: 550;">缴费金额</text>
+    <view style="width: 10vw;"></view>
+    <text class="label_text" style="color: #D9D9D9; font-weight: 550;">元,最大金额为200元</text>
+  </view>
+  <view style="height: 1px; width: 100vw;background-color: #f8f8f8;"></view>
+  <view style="height: 2vh;"></view>
+  <view style="display: flex;flex-direction: row; ">
+    <image src="/pages/img/17.png" mode="scaleToFill" class="img"/>
+    <text class="label_text" style="color: #D9D9D9;">账户密码</text>
+    <view style="width: 10vw;"></view>
+    <text class="label_text" style="color: #D9D9D9; font-weight: 550;">6位数字密码</text>
+  </view>
+  <view style="height: 1vh;"></view>
+  <view style="height: 1px; width: 100vw;background-color: #f8f8f8;"></view>
+  <view style="height: 3vh;"></view>
+  <button disabled="true" style="width: 90vw; height: 6vh; background: #82E0A8; color: #fff; line-height: 6vh; font-size: 14px;">缴 费</button>
+  <view style="height: 2vh;"></view>
+  <view style="width: 90vw; padding-left: 5vw; padding-right: 5vw; color:#c6c6c6; font-size: 12px; font-weight: 550;">
+    提示:剩余电量会定期刷新,因此缴费成功后在本页面可能无法及时的查询到最新的剩余电量,请您谅解。
+  </view>
+</view>
+</page-meta>

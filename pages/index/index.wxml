@@ -1,4 +1,4 @@
 <view style="text-align: center;margin-top: 20px;">
     <image src="index.png" style="width: 580rpx; height: 712rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></image>
-    <button bindtap="home" style="margin-top: 40px; width: 40%;" type="primary">开始使用</button>
+    <button bindtap="home" style="margin-top: 40px; width: 50vw;" type="primary">开始使用</button>
 </view>

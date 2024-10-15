@@ -11,7 +11,9 @@
     "pages/relieve/relieve",
     "pages/faceView/faceView",
     "pages/problem/problem",
-    "pages/setup/setup"
+    "pages/setup/setup",
+    "pages/ElePay/ElePay",
+    "pages/recharge/recharge"
   ],
   "window": {
     "backgroundTextStyle": "light",
