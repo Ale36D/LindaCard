@@ -8,7 +8,7 @@
     <image src="/pages/img/11.png" mode="scaleToFill" class="img"/>
     <text class="label_text">个人编号</text>
     <view style="width: 10vw;"></view>
-    <text class="label_text">{{stuID}}202409070307</text>
+    <text class="label_text">{{stuID}}</text>
   </view>
   <view style="height: 1vh;"></view>
   <view style="height: 1px; width: 100vw;background-color: #f8f8f8;"></view>

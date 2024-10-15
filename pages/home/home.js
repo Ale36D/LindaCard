@@ -90,7 +90,7 @@ Page({
     },
     openElePay:function(){
       wx.navigateTo({
-        url: '/pages/ElePay/ElePay?titleName=' + "电控缴费"
+        url: '/pages/ElePay/ElePay?titleName=' + "电控缴费" + "&stuID=" + this.data.stuID
       })
     },
     openRecharge:function(){

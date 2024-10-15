@@ -6,6 +6,7 @@ Page({
    */
   data: {
     titleName:"",
+    stuID:"",
     roomInfoList:[
       {icon:"/pages/img/12.png", nameInfo:"区域", tipsInfo:"点击选择区域", regionList:["第一生活区","第二生活区","费县校区"]},
       {icon:"/pages/img/13.png", nameInfo:"楼号", tipsInfo:"点击选择楼号", regionList:["B1","B2","B3","B4","C1","C2","C3","C4","C5","C6","D1","D2","D3","D4","D5","D6","D7","F1","F2","F3","F4"]},
@@ -21,7 +22,8 @@ Page({
    */
   onLoad(options) {
     this.setData({
-      titleName:options.titleName
+      titleName:options.titleName,
+      stuID:options.stuID
     })
     wx.setNavigationBarTitle({
       title:this.data.titleName
