@@ -12,7 +12,7 @@
   </view>
   <view style="display: flex; flex-direction: row; margin: 5vw;">
     <text>余额:</text>
-    <input bindinput="moneyInput" value="{{money}}" style="margin-left: 5vw;" type="number" placeholder="修改的余额"/>
+    <input bindinput="moneyInput" value="{{money}}" style="margin-left: 5vw;" type="digit" placeholder="修改的余额"/>
   </view>
   <view style="display: flex; flex-direction: row; margin: 5vw;">
     <button bindtap="getInputValue" style="margin: 5vw; background: #ff6b81; color: #fff;">读取</button>

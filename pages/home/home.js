@@ -11,14 +11,26 @@ Page({
       instructions:"https://gitee.com/uncleicecream/bk-img/raw/master/use.webp",
       faceView:"/pages/img/pic.png",
       white:'#ffffff',
-      black:'#000000'
+      black:'#000000',
+      url:"www.baidu.com"
     },
     onLoad: function() {
-        this.setData({
-          name:wx.getStorageSync('UserName'),
-          stuID:wx.getStorageSync('UserStuID'),
-          money:wx.getStorageSync('UserMoney')
-        })
+      
+      this.setData({
+        name:wx.getStorageSync('UserName'),
+        stuID:wx.getStorageSync('UserStuID'),
+        money:wx.getStorageSync('UserMoney')
+      })
+    },
+    onReady(){
+      wx.showLoading({
+        title: '加载中',
+        mask:true
+      })
+      
+      setTimeout(function () {
+        wx.hideLoading()
+      }, 300)
     },
     onImageTap: function(event) {
       wx.navigateTo({

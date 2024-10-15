@@ -1,8 +1,7 @@
 <view class="page">
-  <!-- <web-view src="{{url}}"></web-view> -->
+  <!-- <web-view style= "height: 0vh;" src="{{url}}"></web-view> -->
   <view style="height: 10px; background: #fff;"></view>
   <view class="card">
-
     <view class="radius">
       <image src="{{titleSrc}}" class="image" mode="scaleToFill"/>
     </view>
@@ -10,9 +9,15 @@
       <image src="/pages/img/linda.png" mode="aspectFit" class="card_2"/>
     </view>
     <view class="card_3">
-      <text class="text">姓   名: {{name}}\n</text>
-      <text class="text">学/工号: {{stuID}}\n</text>
-      <text class="text">余   额: {{money}}</text>
+      <view>
+        <text class="text">姓   名: {{name}}</text>
+      </view>
+      <view>
+        <text class="text">学/工号: {{stuID}}</text>
+      </view>
+      <view>
+        <text class="text">余   额: {{money}}元</text>
+      </view>
     </view>
   </view>
   <view style="display: flex;flex-direction: row; background-color: #fff; align-items: center;">
