@@ -1,5 +1,11 @@
 <!--pages/details/details.wxml-->
 <view>
+  <view hidden="{{isHinddenLodingBar}}" style="height: 100vh; width: 100vw; background: #fff; position: absolute;">
+    <progress percent="20" percent="100" active stroke-width="3" duration="10" bindactiveend="lodingBarOver"/>
+    <view class="loadingBar">
+      <text style="color: #c6c6c6;">加载中...</text>
+    </view>
+  </view>
   <view class="title_card">
     <view style="width: 40%;">
       <text style="font-size: 13px;">全部</text>

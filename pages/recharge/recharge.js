@@ -5,20 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    isHinddenLodingBar:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    
+    let id = options.titleName
+    wx.setNavigationBarTitle({
+      title: id,
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
+    
+  },
+  lodingBarOver:function(event){
+    let value = this.data.isHinddenLodingBar
+    this.setData({
+      isHinddenLodingBar:!value
+    })
     setTimeout(()=>{
       wx.showLoading({
       })

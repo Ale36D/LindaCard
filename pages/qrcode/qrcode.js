@@ -16,7 +16,10 @@ Page({
     ],
     nowImgPath:"",
     refreshLabelText:"点击刷新",
-    isClickFlag:false
+    isClickFlag:false,
+    isHinddenLodingBar:false,
+    nowImgID:0,
+    refreshImgPath:"/pages/img/ref.png"
   },
 
   /**
@@ -27,6 +30,19 @@ Page({
     that.setData({
       name:options.name
     })
+    wx.setNavigationBarTitle({
+      title: '获取用户信息'
+    })
+  },
+  lodingBarOver:function(event){
+    wx.setNavigationBarTitle({
+      title: '二维码'
+    })
+    let value = this.data.isHinddenLodingBar
+    this.setData({
+      isHinddenLodingBar:!value
+    })
+    this.lodingImgToView()
   },
   hiddenView:function(event){
     let value = this.data.isHiddenView
@@ -35,50 +51,57 @@ Page({
     })
   },
   refreshClickBtn:function(){
+    let id = this.data.nowImgID
     if(!this.data.isClickFlag){
       this.setData({
-        nowImgPath:"",
         refreshLabelText:"已刷新",
-        isClickFlag:true
+        refreshImgPath:"/pages/img/refresh.png",
+        isClickFlag:true,
+        nowImgID:id + 1
       })
+      if(this.data.nowImgID > 4){
+        this.setData({
+          nowImgID:0
+        })
+      }
       wx.showLoading({
-        title: '',
       })
-      let id =(Math.floor(Math.random()*10+1)%5)
       setTimeout(()=>{
         this.setData({
-          nowImgPath:"/pages/img/code_" + id + ".png"
+          nowImgPath:"/pages/img/code_" + this.data.nowImgID + ".png"
         })
         wx.hideLoading()
       }, 400)
+
       setTimeout(()=>{
         this.setData({
           refreshLabelText:"点击刷新",
+          refreshImgPath:"/pages/img/ref.png",
           isClickFlag:false
         })
-      }, 2000)
+      }, 3000)
     }
-    
   },
   lodingImgToView(){
     setTimeout(()=>{
       wx.showLoading({
-        title: '',
       })
-    }, 1000)
+    }, 500)
     let id =(Math.floor(Math.random()*10+1)%5)
+    this.setData({
+      nowImgID:id
+    })
     setTimeout(()=>{
       this.setData({
         nowImgPath:"/pages/img/code_" + id + ".png"
       })
       wx.hideLoading()
-    }, 1400)
+    }, 1000)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-    this.lodingImgToView()
   },
 
   /**

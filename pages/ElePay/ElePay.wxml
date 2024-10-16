@@ -1,5 +1,11 @@
 <!--pages/ElePay/ElePay.wxml-->
 <page-meta>
+  <view hidden="{{isHinddenLodingBar}}" style="z-index: 10; height: 100vh; width: 100vw; background: #fff; position: absolute;">
+    <progress percent="20" percent="100" active stroke-width="3" duration="5" bindactiveend="lodingBarOver"/>
+    <view class="loadingBar">
+      <text style="color: #c6c6c6;">加载中...</text>
+    </view>
+  </view>
 <view style="display: flex;flex-direction: column; padding-left: 2vw;">
 <!-- 用户信息 -->
   <text style="color: #D9D9D9; font-size: 14px; font-weight: 550;">用户信息</text>

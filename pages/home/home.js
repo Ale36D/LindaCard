@@ -12,10 +12,12 @@ Page({
       faceView:"/pages/img/pic.png",
       white:'#ffffff',
       black:'#000000',
-      url:"www.baidu.com"
+      url:"www.baidu.com",
+      isHinddenLodingBar:false,
+      backShowLodingBar:true,
+      showBackShowLodingBar:false
     },
     onLoad: function() {
-      
       this.setData({
         name:wx.getStorageSync('UserName'),
         stuID:wx.getStorageSync('UserStuID'),
@@ -27,10 +29,26 @@ Page({
         title: '加载中',
         mask:true
       })
-      
       setTimeout(function () {
         wx.hideLoading()
       }, 300)
+    },
+    onShow() {
+      this.setData({
+        backShowLodingBar:false
+      })
+    },
+    backShowLodingBarOver:function(){
+      let value = this.data.backShowLodingBar
+      this.setData({
+        backShowLodingBar:true
+      })
+    },
+    lodingBarOver:function(event){
+      let value = this.data.isHinddenLodingBar
+      this.setData({
+        isHinddenLodingBar:!value
+      })
     },
     onImageTap: function(event) {
       wx.navigateTo({
@@ -39,17 +57,17 @@ Page({
     },
     accountRecharge:function(event){
       wx.navigateTo({
-        url: "/pages/common/common?src=" + this.data.accountRecharge  + "&color=" + this.data.black
+        url: "/pages/common/common?src=" + this.data.accountRecharge  + "&color=" + this.data.black + "&titleName=" + "BOC_pic.jpg(866x1220)"
       });
     },
     facialInformationCollection:function(event){
       wx.navigateTo({
-        url: "/pages/common/common?src=" + this.data.facialInformationCollection + "&color=" + this.data.black
+        url: "/pages/common/common?src=" + this.data.facialInformationCollection + "&color=" + this.data.black + "&titleName=" + "face_instructions.jpg(853x1280)"
       });
     },
     instructions:function(event){
       wx.navigateTo({
-        url: "/pages/common/common?src=" + this.data.instructions + "&color=" + this.data.white
+        url: "/pages/common/common?src=" + this.data.instructions + "&color=" + this.data.white + "&titleName=" + "Instructions.jpg (1556x9745)"
       });
     },
     openBalance:function(event){
@@ -95,7 +113,7 @@ Page({
     },
     openRecharge:function(){
       wx.navigateTo({
-        url: '/pages/recharge/recharge'
+        url: '/pages/recharge/recharge?titleName=' + " "
       })
     }
     

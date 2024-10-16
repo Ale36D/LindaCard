@@ -1,5 +1,11 @@
 <!--pages/faceView/faceView.wxml-->
 <page-meta page-style="background:#EEEEEE">
+  <view hidden="{{isHinddenLodingBar}}" style="height: 100vh; width: 100vw; background: #fff; position: absolute;">
+    <progress percent="20" percent="100" active stroke-width="3" duration="10" bindactiveend="lodingBarOver"/>
+    <view class="loadingBar">
+      <text style="color: #c6c6c6;">加载中...</text>
+    </view>
+  </view>
   <view class="body">
     <view class="body_card">
       <image src="{{imgSrc}}" class="image" mode="aspectFit"></image>

@@ -5,24 +5,33 @@ Page({
    * 页面的初始数据
    */
   data: {
-    titleName:""
+    titleName:"",
+    isHinddenLodingBar:false
   },
-
+  lodingBarOver:function(event){
+    let value = this.data.isHinddenLodingBar
+    this.setData({
+      isHinddenLodingBar:!value
+    })
+    this.loadingBarShow()
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.setData({
+      titleName:options.titleName
+    })
+    wx.setNavigationBarTitle({
+      title:this.data.titleName
+    })
+  },
+  loadingBarShow:function(){
     setTimeout(()=>{
-      this.setData({
-        titleName:options.titleName
-      }),
-      wx.setNavigationBarTitle({
-        title:this.data.titleName
-      }),
       wx.showLoading({
-        duration:1000
+        duration:2500
       })
-    }, 500)
+    }, 300)
   },
 
   /**

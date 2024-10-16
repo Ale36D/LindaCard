@@ -5,9 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    titleName:"",
     src:"",
     sysheight:0,
-    srcColor:''
+    srcColor:'',
+    isHinddenLodingBar:false
   },
 
   /**
@@ -16,7 +18,8 @@ Page({
   onLoad(options) {
     this.setData({
       src:options.src,
-      srcColor:options.color
+      srcColor:options.color,
+      titleName:options.titleName
     })
     console.log(this.data.srcColor)
     wx.getSystemInfo({//获取设备屏幕真实高度
@@ -26,10 +29,16 @@ Page({
         })
       },
     })
- 
-  
-
-
+    wx.setNavigationBarTitle({
+      title: this.data.titleName,
+    })
+  },
+  lodingBarOver:function(event){
+    let value = this.data.isHinddenLodingBar
+    this.setData({
+      isHinddenLodingBar:!value
+    })
+    this.lodingImgToView()
   },
 
   /**

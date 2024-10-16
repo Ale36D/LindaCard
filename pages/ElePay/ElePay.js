@@ -13,7 +13,8 @@ Page({
       {icon:"/pages/img/14.png", nameInfo:"楼层", tipsInfo:"点击选择楼层", regionList:["一层","二层","三层","四层","五层","六层"]},
       {icon:"/pages/img/15.png", nameInfo:"房间", tipsInfo:"点击选择房间", regionList:[]},
     ],
-    refundReason:null
+    refundReason:null,
+    isHinddenLodingBar:false
   },
  
 
@@ -30,6 +31,12 @@ Page({
     })
   },
   bindCampusChange:function(e){
+  },
+  lodingBarOver:function(event){
+    let value = this.data.isHinddenLodingBar
+    this.setData({
+      isHinddenLodingBar:!value
+    })
   },
 
   /**

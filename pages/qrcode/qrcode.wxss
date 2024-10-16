@@ -41,3 +41,13 @@ page{
   width: 90vw;
   height: 50vh;
 }
+.loadingBar{
+  width: 100vw;
+  position: absolute;
+  top: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}

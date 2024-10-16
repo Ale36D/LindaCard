@@ -1,6 +1,13 @@
 <!--pages/common/common.wxml-->
 <page-meta page-style="background:{{srcColor}}">
-  <scroll-view scroll-y="{{true}}" style="width:100vw;height: 100vh; top: 0px; margin-top: 5%;">
+  
+  <scroll-view scroll-y="{{true}}" style="width:100vw;height: 100vh; top: 0px;">
+    <view hidden="{{isHinddenLodingBar}}" style="height: 100vh; width: 100vw; background: #fff; position: absolute;">
+      <progress percent="20" percent="100" active stroke-width="3" duration="10" bindactiveend="lodingBarOver"/>
+      <view class="loadingBar">
+        <text style="color: #c6c6c6;">加载中...</text>
+      </view>
+    </view>
     <view class="img-size">
       <image src="{{src}}" mode="widthFix" class="liucheng-img"></image>
     </view>

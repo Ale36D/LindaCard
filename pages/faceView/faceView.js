@@ -6,7 +6,8 @@ Page({
    */
   data: {
     titleName:"",
-    imgSrc:""
+    imgSrc:"",
+    isHinddenLodingBar:false
   },
 
   /**
@@ -19,6 +20,15 @@ Page({
     })
     wx.setNavigationBarTitle({
       title: this.data.titleName
+    })
+  },
+  lodingBarOver:function(event){
+    let value = this.data.isHinddenLodingBar
+    this.setData({
+      isHinddenLodingBar:!value
+    })
+    wx.showLoading({
+      duration:1000
     })
   },
 

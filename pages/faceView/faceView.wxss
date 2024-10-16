@@ -21,3 +21,12 @@
   overflow: hidden;
   width: 30vw;
 }
+.loadingBar{
+  width: 100vw;
+  position: absolute;
+  top: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
